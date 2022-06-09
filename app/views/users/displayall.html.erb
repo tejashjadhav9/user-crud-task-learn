@@ -1,0 +1,15 @@
+<%= stylesheet_link_tag "displayall" %>
+<section class="section1">
+<div class="divp">
+<% @users.each do |user| %>
+<ul>
+  <div class="divc">
+  <b><%=  user.name %></b>
+  <li><%=  user.age %></li>
+  <li><%=  user.blog %></li>
+  </div>
+  
+</ul>
+  <% end %>
+</div>
+</section>

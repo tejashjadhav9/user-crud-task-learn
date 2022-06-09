@@ -1,0 +1,11 @@
+<ul>
+  <% @users.each do |user| %>
+    <li class="lis">
+      <%= link_to user.name, user %>
+      
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "<button>new</button>".html_safe, new_user_path(@user) %>
+

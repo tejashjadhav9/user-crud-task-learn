@@ -1,0 +1,7 @@
+<p><%= @user.id %><p>
+<p><%= @user.name %><p>
+<p><%= @user.age %></p>
+<p><%= @user.blog %></p>
+<%= link_to "<button>Homepage</button>".html_safe, root_path(@user) %>
+<%= link_to "<button>Edit</button>".html_safe, edit_user_path(@user) %>
+<%= link_to "<button>Destroy</button>".html_safe, user_path(@user), data: {turbo_method: :delete,turbo_confirm: "Are you sure?"} %>
